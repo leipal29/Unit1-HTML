@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Contact Form</h1>
-    <form action="">
+    <form action="results.html" method="GET">
         <table>
             <!-- Basic Text -->
             <tr>
@@ -58,15 +58,44 @@
                 <td>Grade:</td>
                 <td>
                     <label><input type="radio" name="grade" value="9th">9th Grade</label>
-                    <label><input type="radio" name="grade" value="9th">10th Grade</label>
+                    <label><input type="radio" name="grade" value="10th">10th Grade</label>
                    
                 </td>
+            </tr>
+
+                <!-- Checkboxes -->
+                 <tr>
+                <td>Grade:</td>
+                <td>
+                    <label><input type="checkbox" name="grade" value="9th">9th Grade</label>
+                    <label><input type="checkbox" name="grade" value="10th">10th Grade</label>
+                   
+                </td>
+            </tr>
+
+            
                 <!-- Select (Dropdown) -->
+                 <br>
+                <tr>
+                 <td>Favortie Sport?:</td>
+                <td>
+                   <label for="sports">Select:</label>
+                    <select name="sports" id="sports">
+                        <option value="" select disabled> Select a sport </option>
+                        <option value="soccer">Soccer</option>
+                         <option value="baseball">Baseball</option>
+                         <option value="basketball">Basketball</option>
+                    </select>
+                </td>
 
-
-             </tr>
-        </table>
+                </tr>
           
+
+
+            
+        </table>
+          <!--<input type="submit" value ="Submit"  -->
+          <button type="submit">Submit</button>
     
     </form>
 </body>
